@@ -17,9 +17,9 @@ body {
     margin: 25px 50px 25px 100px;
 }
 .sidebar {
-    font-size: 30px; /* Increase size */
+    font-size: 70px; /* Increase size */
     cursor: pointer;
-		margin:20px;
+		margin:40px;
 		font-size:3em;
     width: 250px;
     height: 100vh;
