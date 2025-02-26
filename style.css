@@ -20,7 +20,7 @@ nav {width: auto;
 
 nav .right {
     display: flex;
-    width: 100px;
+    width: auto;
     height: auto;
 }
 
