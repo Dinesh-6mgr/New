@@ -19,7 +19,7 @@ body {
 .sidebar {
     font-size: 70px; /* Increase size */
     cursor: pointer;
-		margin:40px;
+		margin:20px;
 		font-size:3em;
     width: 250px;
     height: 100vh;
@@ -47,8 +47,8 @@ body {
 }
 .toggle-btn {
 
-    font-size: 30px; /* Increase size */
-    
+    font-size: 70px; /* Increase size */
+    margin: 20px;
     position: fixed;
     left: 10px;
     top: 10px;
