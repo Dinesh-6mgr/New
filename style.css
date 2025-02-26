@@ -23,6 +23,7 @@ body {
     padding-top: 20px;
 }
 
+/* Sidebar Links */
 .sidebar a {
     display: block;
     color: white;
@@ -44,13 +45,14 @@ body {
 .menu-btn {
     font-size: 25px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
     color: white;
     background-color: #2D336B;
     padding: 10px;
     border-radius: 5px;
+    z-index: 1000;
 }
 
 /* Main Content */
