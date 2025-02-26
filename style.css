@@ -1,76 +1,81 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Body styling */
 body {
     background-color: #7886C7;
     color: white;
-    display: flex;
 }
 
-/* Sidebar Navigation */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 100vh;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
     background-color: #2D336B;
+}
+
+nav .right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    transition: width 0.3s ease-in-out;
+    width: 100px;
+    height: auto;
 }
 
-/* Sidebar expands when hovered */
-.sidebar:hover {
-    width: 200px;
-}
-
-/* Sidebar icons */
-.sidebar a {
-    text-decoration: none;
-    color: white;
+nav ul {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 15px;
-    transition: background 0.3s ease-in-out;
+    justify-content: space-around;
 }
 
-.sidebar a i {
-    font-size: 20px;
-    margin-right: 15px;
+nav .right ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
 
-/* Hover effect */
-.sidebar a:hover {
-    background: rgba(255, 255, 255, 0.2);
+nav .right ul li {
+    margin: 0px 25px;
 }
 
-/* Sidebar text (hidden when collapsed) */
-.sidebar span {
-    display: none;
+nav .right ul li a {
+    font-size: 18px;
+    color: azure;
+    text-decoration: none; /* Removes underline */
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+
+
 }
 
-.sidebar:hover span {
-    display: inline;
+
+.firstsection {
+    
+    justify-content: space-around;
+    margin: 23px 25px;
+    text-align: justify;
+}
+ .school {
+width: 300px;
+height: 150px;
+margin: 25px;
+float: right;
+}
+.s {
+    color: rgb(252, 109, 14);
 }
 
-/* Content section */
-.main-content {
-    margin-left: 60px;
-    padding: 20px;
-    width: 100%;
-    transition: margin-left 0.3s ease-in-out;
+nav ul li a:hover {
+    color: rgb(15, 119, 160);
+    font-size: 1.5 em;
 }
+.h1 {
+    font-weight:bold;
+    text-decoration: underline;
+    font: 2em sans-serif;
 
-.sidebar:hover ~ .main-content {
-    margin-left: 200px;
+}
+.p  {color: #E0FFFF;
+    font-size: x-large;
+    text-align: justify;
 }
