@@ -16,7 +16,7 @@ body {
     color: white;
     margin: 25px 50px 25px 100px;
 }
-.sidebar {
+.sidebar {margin:20px;
 		font-size:3em;
     width: 250px;
     height: 100vh;
