@@ -1,114 +1,141 @@
-/* Reset styles */
+/* Reset default margins, paddings, and apply a modern box-sizing model */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Body */
+/* Apply a smooth background color */
 body {
     background-color: #7886C7;
     color: white;
+    line-height: 1.6;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    height: 100vh;
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
     background-color: #2D336B;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    transition: 0.3s ease-in-out;
-    padding-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar Active (When Opened) */
-.sidebar.active {
-    left: 0;
+/* Logo */
+nav .left img {
+    width: 80px;
+    height: auto;
 }
 
-/* Sidebar Header */
-.sidebar-header {
+/* Navigation Menu */
+nav .right ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Navigation Links */
+nav .right ul li a {
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Navigation */
+nav ul li a:hover {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* First Section */
+.firstsection {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    color: white;
-    font-size: 20px;
-    border-bottom: 1px solid white;
+    padding: 50px 10%;
+    flex-wrap: wrap;
 }
 
-/* Close Button */
-.close-btn {
-    cursor: pointer;
-    font-size: 24px;
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 50%;
-    transition: 0.3s;
+/* Left Section - Welcome Text */
+.firstsection .left {
+    width: 55%;
+    text-align: left;
 }
 
-.close-btn:hover {
-    background-color: darkred;
+/* Heading */
+.h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 
-/* Sidebar Links */
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Paragraph */
+.p {
+    color: #E0FFFF;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 15px;
+    word-wrap: break-word;
 }
 
-.sidebar ul li {
-    padding: 15px 20px;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+/* Right Section - Image */
+.firstsection .right {
+    width: 40%;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
 }
 
-.sidebar ul li a:hover {
-    background-color: #1a1f48;
+.firstsection .right img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Menu Button (☰) */
-.menu-btn {
-    font-size: 25px;
-    cursor: pointer;
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    background-color: #2D336B;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
+/* Special Highlighted Text */
+.s {
+    color: #ffcc00;
+    font-weight: bold;
 }
 
-/* Main Content */
-.main-content {
-    margin-left: 20px;
-    padding: 20px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .menu-btn {
-        display: block;
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .sidebar {
-        width: 200px;
+    nav .right ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
     }
 
-    .main-content {
-        margin-left: 0;
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .firstsection .left, 
+    .firstsection .right {
+        width: 100%;
+    }
+
+    .firstsection .right img {
+        max-width: 250px;
+    }
+
+    .h1 {
+        font-size: 1.5em;
+    }
+
+    .p {
+        font-size: 1em;
     }
 }
