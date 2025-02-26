@@ -1,76 +1,75 @@
-/* Reset default styles */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Body styling */
 body {
+    font-family: Arial, sans-serif;
     background-color: #7886C7;
     color: white;
-    display: flex;
 }
 
 /* Sidebar Navigation */
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 60px;
+    width: 250px;
     height: 100vh;
     background-color: #2D336B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: 0.3s ease-in-out;
     padding-top: 20px;
-    transition: width 0.3s ease-in-out;
 }
 
-/* Sidebar expands when hovered */
-.sidebar:hover {
-    width: 200px;
-}
-
-/* Sidebar icons */
 .sidebar a {
-    text-decoration: none;
+    display: block;
     color: white;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 15px;
-    transition: background 0.3s ease-in-out;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.sidebar a i {
-    font-size: 20px;
-    margin-right: 15px;
-}
-
-/* Hover effect */
 .sidebar a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background-color: #1a1f48;
 }
 
-/* Sidebar text (hidden when collapsed) */
-.sidebar span {
-    display: none;
+/* Show sidebar when active */
+.sidebar.active {
+    left: 0;
 }
 
-.sidebar:hover span {
-    display: inline;
+/* Hamburger Menu (☰) */
+.menu-btn {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    background-color: #2D336B;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Content section */
+/* Main Content */
 .main-content {
-    margin-left: 60px;
+    margin-left: 20px;
     padding: 20px;
-    width: 100%;
-    transition: margin-left 0.3s ease-in-out;
 }
 
-.sidebar:hover ~ .main-content {
-    margin-left: 200px;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
 }
