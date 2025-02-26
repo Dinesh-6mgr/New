@@ -46,6 +46,9 @@ body {
     font-size: 18px;
 }
 .toggle-btn {
+
+    font-size: 30px; /* Increase size */
+    
     position: fixed;
     left: 10px;
     top: 10px;
