@@ -7,8 +7,8 @@
     <link rel="icon" href="image/logo.png">
     <link rel="stylesheet" href="style.css">
     
-    <!-- FontAwesome for Icons -->
-    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome Icons (Use this if your key is not working) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -31,10 +31,11 @@
         <p>This is the main content area.</p>
     </div>
 
-    <!-- JavaScript for Toggle Menu -->
+    <!-- JavaScript for Menu Toggle -->
     <script>
         function toggleMenu() {
-            document.querySelector(".sidebar").classList.toggle("active");
+            let sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("active");
         }
     </script>
 
