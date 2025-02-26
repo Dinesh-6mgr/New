@@ -17,7 +17,7 @@ body {
     margin: 25px 50px 25px 100px;
 }
 .sidebar {
-    font-size: 50px; /* Increase size */
+    font-size: 30px; /* Increase size */
     cursor: pointer;
 		margin:30px 20px;
 		font-size:3em;
@@ -47,7 +47,7 @@ body {
 }
 .toggle-btn {
 
-    font-size: 70px; /* Increase size */
+    font-size: 50px; /* Increase size */
     margin: 20px;
     position: fixed;
     left: 10px;
