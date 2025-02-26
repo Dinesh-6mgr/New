@@ -11,29 +11,29 @@
 
 <body>
     <header>
-<!-- Sidebar Navigation -->
-<div class="sidebar">
-    <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
-    <a href="#"><i class="fas fa-th"></i> <span>Grid</span></a>
-    <a href="#"><i class="fas fa-info-circle"></i> <span>About Us</span></a>
-</div>
+        <nav>
+            <div class="left">
+                <img src="image/logo.png" style="width:110px; height: 110px;">
+            </div>
 
-<!-- FontAwesome Icons -->
-<script src="https://kit.fontawesome.com/your-fontawesome-key.js"></script>
-<!-- Sidebar Navigation -->
-<div class="sidebar">
-    <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
-    <a href="#"><i class="fas fa-th"></i> <span>Grid</span></a>
-    <a href="#"><i class="fas fa-info-circle"></i> <span>About Us</span></a>
-</div>
+            <div class="right">
+                <ul>
+                    <li class="Home"><a href="" class="a">Home</a></li>
+                    <li class="Grid"><a href="" class="a">Grid</a></li>
+                    <li class="About"><a href="" class="a">About us</a></li>
 
-<!-- FontAwesome Icons -->
-<script src="https://kit.fontawesome.com/your-fontawesome-key.js"></script>
-
-
+                </ul>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.querySelector(".nav-links");
+                    menu.classList.toggle("nav-active");
+                }
+            </script>
     </header>
     <div class="firstsection">
-        <div class="left">
+        <img src="image/school.png" alt="tight-image" class="school">
+        
             <h1 class="h1">Welcome to Shree Jana Jyoti Namuna Secondary School!   </h1>
             <p class="p">Dear Students, Parents, and Visitors,</br>
 
@@ -42,22 +42,23 @@
                 to fostering a nurturing environment where students can achieve academic success, develop 
                 essential life skills, and become responsible global citizens.
             </br>
+        </br>
                 With a team of dedicated educators, modern learning facilities, and a commitment to holistic 
                 education, we strive to inspire young minds and shape the future. Whether you are a student 
                 eager to learn, a parent seeking the best for your child, or a visitor exploring our school, 
                 we are delighted to have you here.
-                
+
                 Thank you for being a part of our journey towards excellence in education!</br>
-                
+
                 📚 <span class="s">"Education is the key to unlocking infinite possibilities!"</span>
             </br>
         <p class="p" style="text-align: right;"> Warm regards,</br>
             Shree Jana Jyoti Namuna Secondary School</p>       
         </p>
-        </div>
-        <div class="right">
-            <img src="image/school.png" alt="" class="school">
-        </div>
+    
+        
+            
+        
     </div>
 
 </body>
