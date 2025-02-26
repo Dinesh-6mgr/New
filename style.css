@@ -1,4 +1,4 @@
-/* Reset default margins, paddings, and apply a modern box-sizing model */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,136 +6,71 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Apply a smooth background color */
+/* Body styling */
 body {
     background-color: #7886C7;
     color: white;
-    line-height: 1.6;
+    display: flex;
 }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 10%;
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
     background-color: #2D336B;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo */
-nav .left img {
-    width: 80px;
-    height: auto;
-}
-
-/* Navigation Menu */
-nav .right ul {
     display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-/* Navigation Links */
-nav .right ul li a {
-    font-size: 16px;
-    color: azure;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Hover Effect for Navigation */
-nav ul li a:hover {
-    color: #f39c12;
-    font-weight: bold;
-}
-
-/* First Section */
-.firstsection {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 50px 10%;
-    flex-wrap: wrap;
+    padding-top: 20px;
+    transition: width 0.3s ease-in-out;
 }
 
-/* Left Section - Welcome Text */
-.firstsection .left {
-    width: 55%;
-    text-align: left;
+/* Sidebar expands when hovered */
+.sidebar:hover {
+    width: 200px;
 }
 
-/* Heading */
-.h1 {
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
-
-/* Paragraph */
-.p {
-    color: #E0FFFF;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-bottom: 15px;
-    word-wrap: break-word;
-}
-
-/* Right Section - Image */
-.firstsection .right {
-    width: 40%;
+/* Sidebar icons */
+.sidebar a {
+    text-decoration: none;
+    color: white;
     display: flex;
-    justify-content: center;
-}
-
-.firstsection .right img {
+    align-items: center;
     width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: background 0.3s ease-in-out;
 }
 
-/* Special Highlighted Text */
-.s {
-    color: #ffcc00;
-    font-weight: bold;
+.sidebar a i {
+    font-size: 20px;
+    margin-right: 15px;
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Hover effect */
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
 
-    nav .right ul {
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 10px;
-    }
+/* Sidebar text (hidden when collapsed) */
+.sidebar span {
+    display: none;
+}
 
-    .firstsection {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+.sidebar:hover span {
+    display: inline;
+}
 
-    .firstsection .left, 
-    .firstsection .right {
-        width: 100%;
-    }
+/* Content section */
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.3s ease-in-out;
+}
 
-    .firstsection .right img {
-        max-width: 250px;
-    }
-
-    .h1 {
-        font-size: 1.5em;
-    }
-
-    .p {
-        font-size: 1em;
-    }
+.sidebar:hover ~ .main-content {
+    margin-left: 200px;
 }
