@@ -41,7 +41,7 @@ nav .right ul li {
 }
 
 nav .right ul li a {
-    font-size: 25px;
+    font-size: 40px;
     color: azure;
     text-decoration: none; /* Removes underline */
     white-space: nowrap; /* Prevents text from breaking into multiple lines */
