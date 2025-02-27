@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana Jyoti namuna secondary School</title>
+    <link rel="icon" href="image/logo.png" class="icon">
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+</head>
+
+<body>
+    <header> <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar" id="sidebar">
+            <h3>Menu</h3>
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="html/nur.html">Class Nursery</a></li>
+                <li><a href="html/kg.html">Class KG</a></li>
+                <li><a href="html/class1.html">Class 1</a></li>
+                <li><a href="html/class2.html">Class 2</a></li>
+                <li><a href="html/class3.html">Class 3</a></li>
+                <li><a href="html/class4.html">Class 4</a></li>
+                <li><a href="html/class5.html">Class 5</a></li>
+                <li><a href="html/class6.html">Class 6</a></li>
+                <li><a href="html/class7.html">Class 7</a></li>
+                <li><a href="html/class8.html">Class 8</a></li>
+                <li><a href="html/class9.html">Class 9</a></li>
+                <li><a href="html/class10.html">Class 10</a></li>
+            </ul>
+            <script>
+                function toggleSidebar() {
+                    let sidebar = document.getElementById("sidebar");
+                    let content = document.getElementById("content");
+                    sidebar.classList.toggle("show");
+                    content.classList.toggle("shift");
+                }
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></header>
+        <header><nav>
+            <div class="left">
+                <img src="image/logo.png" style="width:110px; height: 110px;">
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li class="Home"><a href="index.html" class="a">Home</a></li>
+                    <li class="Grid"><a href="html/class1.html" class="a">Grid</a></li>
+                    <li class="About"><a href="" class="a">About us</a></li>
+
+                </ul>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.querySelector(".nav-links");
+                    menu.classList.toggle("nav-active");
+                }
+            </script>
+    </header>
+    <div class="firstsection">
+        <img src="image/school.png" alt="tight-image" class="school">
+        
+            <h1 class="h1">Welcome to Shree Jana Jyoti Namuna Secondary School!   </h1>
+            <p class="p">Dear Students, Parents, and Visitors,</br>
+
+                It is with great pride and enthusiasm that we welcome you to Shree Jana Jyoti Namuna 
+                Secondary School,a place of knowledge, growth, and excellence. Our school is dedicated 
+                to fostering a nurturing environment where students can achieve academic success, develop 
+                essential life skills, and become responsible global citizens.
+            </br>
+        </br>
+                With a team of dedicated educators, modern learning facilities, and a commitment to holistic 
+                education, we strive to inspire young minds and shape the future. Whether you are a student 
+                eager to learn, a parent seeking the best for your child, or a visitor exploring our school, 
+                we are delighted to have you here.
+
+                Thank you for being a part of our journey towards excellence in education!</br>
+
+                📚 <span class="s">"Education is the key to unlocking infinite possibilities!"</span>
+            </br>
+        <p class="p" style="text-align: right;"> Warm regards,</br>
+            Shree Jana Jyoti Namuna Secondary School</p>       
+        </p>
+    
+        
+            
+        
+    </div>
+
+</body>
+
+</html>
