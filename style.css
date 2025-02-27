@@ -9,6 +9,7 @@ body {
     color: azure;
 }
 
+/* Navbar */
 nav {
     display: flex;
     align-items: center;
@@ -17,6 +18,7 @@ nav {
     background-color: #2D336B;
 }
 
+/* Right section of Navbar */
 nav .right {
     display: flex;
     width: auto;
@@ -24,16 +26,14 @@ nav .right {
     margin: 0px 10px 0px 0px;
 }
 
+/* Navbar Links */
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-nav .right ul {
-    list-style: none; /* Removes bullet points from list */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav .right ul li {
@@ -43,45 +43,53 @@ nav .right ul li {
 nav .right ul li a {
     font-size: 18px;
     color: azure;
-    text-decoration: none; /* Removes underline */
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
-
-
-}
-
-
-.firstsection {
-    
-    justify-content: space-around;
-    margin: 23px 25px 25px 80px;
-    text-align: justify;
-}
- .school {
-width: 300px;
-height: 150px;
-margin: 25px;
-float: right;
-}
-.s {
-    color: rgb(252, 109, 14);
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 nav ul li a:hover {
     color: rgb(15, 119, 160);
-    font-size: 1.5 em;
+    font-size: 1.5em;
 }
-.h1 {
-    font-weight:bold;
-    text-decoration: underline;
-    font: 2em sans-serif;
 
+/* First Section */
+.firstsection {
+    justify-content: space-around;
+    margin: 23px 25px 25px 80px;
+    text-align: justify;
 }
-.p  {color: #E0FFFF;
+
+/* School Image */
+.school {
+    width: 300px;
+    height: 150px;
+    margin: 25px;
+    float: right;
+}
+
+/* Custom Color Class */
+.s {
+    color: rgb(252, 109, 14);
+}
+
+/* Headings */
+.h1 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+/* Paragraph Styling */
+.p {
+    color: #E0FFFF;
     font-size: x-large;
     text-align: justify;
 }
-.sidebar 
-{margin: 110px 0px 0px 0px;
+
+/* Sidebar */
+.sidebar {
+    margin: 110px 0px 0px 0px;
     background-color: #081861;
     padding: 2px;
     color: white;
@@ -89,36 +97,86 @@ nav ul li a:hover {
     left: -250px;
     transition: 0.3s;
 }
+
 .sidebar.show {
     left: 0;
 }
+
 .sidebar ul {
     list-style-type: none;
     padding: 0;
 }
+
 .sidebar ul li {
     margin: 5px 0;
-    
 }
+
 .sidebar ul li a {
-    
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
+
+/* Sidebar Toggle Button */
 .toggle-btn {
     position: fixed;
     left: 10px;
-    top: 15spx;
-    background-color:transparent;
+    top: 15px;
+    background-color: transparent;
     color: rgb(194, 210, 206);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    z-index: 1000;
     font-size: 30px;
-    margin: 0px 0px;
-    width: 10px;
-    height: 10px;
     z-index: 9999;
+}
+
+/* Responsive Styles for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav .right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav .right ul li {
+        margin: 10px 0;
+    }
+
+    .firstsection {
+        margin: 15px;
+    }
+
+    .school {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        float: none;
+    }
+
+    .sidebar {
+        margin: 80px 0px 0px 0px;
+        left: -200px;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .toggle-btn {
+        left: 5px;
+        top: 10px;
+        font-size: 24px;
+    }
 }
