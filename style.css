@@ -17,7 +17,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     background-color: #1C1C1C;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0 50px;
