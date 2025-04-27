@@ -1,76 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jana Jyoti Namuna Secondary School</title>
-    <link rel="icon" href="image/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download the Jananamuna App for a simple, fast, and lightweight webview experience.">
+  <meta name="keywords" content="Jananamuna, App, WebView, Android, Download, APK">
+  <meta name="author" content="Your Name">
+  <title>Download Jananamuna App</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      background-size: 200% 200%;
+      animation: move 5s linear infinite;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    @keyframes move {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+
+    img.logo {
+      width: 120px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      max-width: 80%;
+    }
+
+    .download-btn {
+      background: #ffffff;
+      color: #0072ff;
+      padding: 15px 40px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background: #0072ff;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
+      transform: scale(1.05);
+    }
+
+    .download-btn.downloading {
+      background: #28a745;
+      color: white;
+      pointer-events: none;
+      box-shadow: 0 8px 15px rgba(40, 167, 69, 0.4);
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .image-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .features {
+      margin-top: 30px;
+      text-align: left;
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 1.2rem;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .testimonials {
+      background: #f4f4f4;
+      padding: 30px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      color: #333;
+      font-style: italic;
+    }
+
+    #progress-container {
+      width: 100%;
+      height: 20px;
+      background-color: #e0e0e0;
+      margin-top: 30px;
+    }
+
+    #progress-bar {
+      width: 0%;
+      height: 100%;
+      background-color: #0072ff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #0072ff;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    .contact-form h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-form button {
+      background: #0072ff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0072ff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
+<body>
 
-<body class="body">
-    <header><nav class="a">  <button class="toggle-btn" onclick="toggleSidebar()">☰</button></nav>
-  
-    <div class="sidebar" id="sidebar">
-        <h3>Menu</h3>
-        <ul >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html/nur.html">Nursery</a></li>
-            <li><a href="html/kg.html">KG</a></li>
-            <li><a href="html/class1.html">Class 1</a></li>
-            <li><a href="html/class2.html">Class 2</a></li>
-            <li><a href="html/class3.html">Class 3</a></li>
-            <li><a href="html/class4.html">Class 4</a></li>
-            <li><a href="html/class5.html">Class 5</a></li>
-            <li><a href="html/class6.html">Class 6</a></li>
-            <li><a href="html/class7.html">Class 7</a></li>
-            <li><a href="html/class8.html">Class 8</a></li>
-            <li><a href="html/class9.html">Class 9</a></li>
-            <li><a href="html/class10.html">Class 10</a></li>
-        </ul>
-        <script>
-            function toggleSidebar() {
-                let sidebar = document.getElementById("sidebar");
-                let content = document.getElementById("content");
-                sidebar.classList.toggle("show");
-                content.classList.toggle("shift");
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </header>
-    <div class="left">
-        <img src="image/logo.png" style="width:80px; height: 80px; margin: 0px 0px 0px 130px; align-items: center;">    </div>
-    <div class="firstsection">
-        <img src="image/school.png" alt="tight-image" class="school" style="padding: 5px;">
-        <h3 style="margin: 5px; text-align: justify;">Welcome to <br>Shree Jana Jyoti Namuna Secondary School!</h3>
-        <p class="p" style="text-align: justify;">
-            Dear Students, Parents, and Visitors,<br><br>
-            It is with great pride and enthusiasm that we welcome you to Shree Jana Jyoti Namuna
-            Secondary School, a place of knowledge, growth, and excellence...
-            <br><br>
-            📚 <span class="s">"Education is the key to unlocking infinite possibilities!"</span>
-        </p>
-        <p class="p" style="text-align: right;">Warm regards,<br>Shree Jana Jyoti Namuna Secondary School</p>
+  <img src="logo.png" alt="Jananamuna Logo" class="logo">
+
+  <h1>Jananamuna App</h1>
+  <p>Fast, Simple, and Lightweight WebView Experience</p>
+
+  <a id="downloadBtn" class="download-btn" href="Jananamuna.apk" download>Download APK</a>
+
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div class="features">
+    <h2>Features</h2>
+    <ul>
+      <li>🚀 Fast & Lightweight</li>
+      <li>🔒 Privacy First - No data tracking</li>
+      <li>📱 Works on all Android devices</li>
+      <li>🔄 Instant updates & bug fixes</li>
+    </ul>
+  </div>
+
+  <div class="image-gallery">
+    <img src="1.jpg" alt="Screenshot 1">
+    <img src="2.jpg" alt="Screenshot 2">
+    <img src="3.jpg" alt="Screenshot 3">
+  </div>
+
+  <div class="testimonials">
+    <h2>User Reviews</h2>
+    <div class="testimonial">
+      <p>"I love this app! It's simple, fast, and easy to use." - User1</p>
     </div>
+    <div class="testimonial">
+      <p>"Best WebView app I've ever used. Highly recommend!" - User2</p>
+    </div>
+  </div>
 
-    <footer style="background-color: #2D336B; color: white; text-align: center; padding: 15px; width: 100%; margin-top: 20px;">
-        <p>&copy; 2025 Shree Jana Jyoti Namuna Secondary School. All Rights Reserved.</p>
-        <p>
-            <a href="index.html" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Home</a> |
-            <a href="#" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
-            <a href="#" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Terms of Service</a>
-        </p>
-        <p>
-            <a href="https://www.facebook.com/share/1EFB78GBa4/" target="_blank" style="color: white; margin: 0 10px; font-size: 20px;">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="mailto:your@email.com" style="color: white; margin: 0 10px; font-size: 20px;">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </p>
-    </footer>
+  <footer>© 2025 Jananamuna App. All rights reserved.</footer>
+
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const progressBar = document.getElementById('progress-bar');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    downloadBtn.addEventListener('click', function() {
+      downloadBtn.classList.add('downloading');
+      downloadBtn.innerText = 'Downloading...';
+
+      simulateDownload();
+    });
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function simulateDownload() {
+      let width = 0;
+      let interval = setInterval(function() {
+        if (width >= 100) {
+          clearInterval(interval);
+          downloadBtn.classList.remove('downloading');
+          downloadBtn.innerText = 'Download Again';
+        } else {
+          width++;
+          progressBar.style.width = width + '%';
+        }
+      }, 50); // After 4 seconds
+    }
+  </script>
+
 </body>
-
 </html>
