@@ -1,109 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>PDF Download Website</title>
 
-    <title>PDF Download Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body">
-    <header><nav class="a">  <button class="toggle-btn" onclick="toggleSidebar()">☰</button></nav>
-  
-    <div class="sidebar" id="sidebar">
-        <h3>Menu</h3>
-        <ul >
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/nur.html">Nursery</a></li>
-            <li><a href="../html/kg.html">KG</a></li>
-            <li><a href="class1.html">Class 1</a></li>
-            <li><a href="class2.html">Class 2</a></li>
-            <li><a href="class3.html">Class 3</a></li>
-            <li><a href="class4.html">Class 4</a></li>
-            <li><a href="class5.html">Class 5</a></li>
-            <li><a href="class6.html">Class 6</a></li>
-            <li><a href="class7.html">Class 7</a></li>
-            <li><a href="class8.html">Class 8</a></li>
-            <li><a href="class9.html">Class 9</a></li>
-            <li><a href="class10.html">Class 10</a></li>
-        </ul>
-        <script>
-            function toggleSidebar() {
-                let sidebar = document.getElementById("sidebar");
-                let content = document.getElementById("content");
-                sidebar.classList.toggle("show");
-                content.classList.toggle("shift");
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </header> <div class="left">
-        <img src="../image/logo.png" style="width:80px; height: 80px; margin: 0px 0px 0px 130px; align-items: center;">
-    </div>
-        <div class="container mt-4">
-        <h2 class="text-center">Download Grid of Class Eight</h2>
-        <div class="row justify-content-center">
+<body>
 
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <img src="../image/Image.png" class="card-img-top" alt="Book Image" >
-                    <div >
-                        <h5><b>Class Eight</b></h5>
-                        <p>Computer Grid</p>
-                        <a href="../Gride-2081/Class-8/8 CLASS SPECIFICATION GRID-2081 (COMPUTER SCIENCE).pdf" class="btn btn-primary" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-            <! –– Eight file ––>
-            
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <img src="../image/Image.png" class="card-img-top" alt="Book Image" >
-                    <div >
-                        <h5><b>Class Eight</b></h5>
-                        <p>Health</p>
-                        <a href="../Gride-2081/Class-8/GRID CLASS 8 HEALTH2081.pdf" class="btn btn-primary" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-            <! –– Eight file ––>
-            
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <img src="../image/Image.png" class="card-img-top" alt="Book Image" >
-                    <div >
-                        <h5><b>Class Eight Grid</b></h5>
-                        <p>Nepali</p>
-                        <a href="../Gride-2081/Class-8/Grid Nepali 2081.pdf" class="btn btn-primary" download>Download PDF</a>
-                    </div>
-                </div>
-            </div>
-            <! –– Eight file ––>
-          
+  <!-- Navigation -->
+  <nav class="a">
+    <img src="../image/logo.png" alt="School Logo" style="width: 80px; height: 80px; margin-left: 10px;">
+    <a href="../index.html" class="toggle-btn" style="text-decoration: none;">←</a>
+  </nav>
+>
+
+  <!-- Sidebar Toggle Script -->
+  <script>
+    function toggleSidebar() {
+      let sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("show");
+    }
+  </script>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Download Grid of Class Eight</h2>
+    <div class="row justify-content-center">
+       <!-- Grid Sciecne -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>Science</p>
+            <a href="../Gride-2081/Class-8/CLASS-8 SCIENCE GRID-2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/CLASS-8 SCIENCE GRID-2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
         </div>
-    </div><footer style="background-color: #2D336B; color: white; text-align: center; padding: 15px; width: auto; margin-top: 20px;">
-        <p>&copy; 2025 Shree Jana Jyoti namuna Secondary School. All Rights Reserved.</p>
-        
-        <p>
-            <a href="../index.html" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Home</a> | 
-            <a href="#" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
-            <a href="#" style="color: #9AA7E1; text-decoration: none; margin: 0 10px;">Terms of Service</a>
-        </p>
-        
-        <!-- Social Icons -->
-        <p>
-            <a href="https://www.facebook.com/share/1EFB78GBa4/" target="_blank" style="color: white; margin: 0 10px; font-size: 20px;">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a href="mailto:your@email.com" style="color: white; margin: 0 10px; font-size: 20px;">
-                <i class="fa fa-envelope"></i>
-            </a>
-        </p>
+      </div>
 
-        <!-- Font Awesome for Icons -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    </footer>
+      <!-- Grid Computer -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>Computer Grid</p>
+            <a href="../Gride-2081/Class-8/8 CLASS SPECIFICATION GRID-2081 (COMPUTER SCIENCE).pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/8 CLASS SPECIFICATION GRID-2081 (COMPUTER SCIENCE).pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
 
-  
+      <!-- Grid Health -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>Health</p>
+            <a href="../Gride-2081/Class-8/Class-8 HEALTH GRID-2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/Class-8 HEALTH GRID-2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Nepali -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight Grid</b></h5>
+            <p>Nepali</p>
+            <a href="../Gride-2081/Class-8/Grid Nepali 2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/Grid Nepali 2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
+       <!-- Grid English -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>English</p>
+            <a href="../Gride-2081/Class-8/CLASS-8 ENGLISH GRID-2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/CLASS-8 ENGLISH GRID-2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
+       <!-- Grid math -->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>Math</p>
+            <a href="../Gride-2081/Class-8/Class-8 Math Grid-2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/Class-8 Math Grid-2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
+ <!-- Grid Social-->
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="../image/Image.png" class="card-img-top" alt="Book Image">
+          <div class="card-body">
+            <h5><b>Class Eight</b></h5>
+            <p>Social</p>
+            <a href="../Gride-2081/Class-8/CLASS-8 SOCIAL GRID-2081.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../Gride-2081/Class-8/CLASS-8 SOCIAL GRID-2081.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-eye"></i> View PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<!-- Footer -->
+
+  <div class="main-content">
+    <!-- Your page content goes here -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shree Jana Jyoti Namuna Secondary School. All Rights Reserved.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a>
+    </p>
+    <p>
+      <a href="https://www.facebook.com/share/1EFB78GBa4/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="mailto:jananamuna@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </p>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
